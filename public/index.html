@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Video Player</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-purple-600 text-white p-5">
+        <div class="container mx-auto  ">
+            <div><a href="#" class="text-2xl font-bold">gkslgrlk</a></div>
+         </div>
+         <div  style="display: flex; justify-content: space-evenly; align-items: center; color: white; ">
+         <div class="hover:font-bold text-center ">
+            <a href="TailwindCSS_ReviewPage.html">TailwindCSS Review Page</a>
+            
+        </div>
+        <div class="hover:font-bold text-center ">
+            
+            <a href="TailwindCSS_LandingPage.html" class="ml-4">TailwindCSS LandingPage</a>
+        </div>
+    </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto mt-8 flex justify-center">
+        <!-- Video Player -->
+<div class="w-full md:max-w-4xl">
+    <div class="relative aspect-w-16 aspect-h-9 h-[600px]">
+        <video class="w-full h-full object-cover" autoplay controls>
+            <source src="/public/umut.mp4" type="video/mp4"> 
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-purple-600 text-white text-center p-4 mt-8">
+        <p>&copy; 2024 Local Video Player. All rights reserved.</p>
+    </footer>
+</body>
+</html>

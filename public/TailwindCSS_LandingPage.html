@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/styles.css" rel="stylesheet">
+  <title>Açılış Sayfası</title>
+</head>
+<body class="bg-gray-200">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-100 shadow-lg border-b-4 rounded-lg border-purple-dark px-2 sm:px-6 lg:px-8 mt-4 mx-auto max-w-5xl">
+        <div class="flex justify-between items-center h-12">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <a href="#" class="flex items-center">
+                    <span class="font-semibold text-black text-lg">Logo</span>
+                </a>
+            </div>
+            <!-- Navbar items -->
+            <div class="hidden md:flex items-center justify-end space-x-2">
+                <a href="#" class="py-2 px-2 text-black hover:text-gray-400 font-semibold transition duration-300">Ana Sayfa</a>
+                <a href="#" class="py-2 px-2 text-black hover:text-gray-400 font-semibold transition duration-300">Hakkında</a>
+                <a href="#" class="py-2 px-2 text-black hover:text-gray-400 font-semibold transition duration-300">Hizmetler</a>
+                <a href="#" class="py-2 px-2 text-black hover:text-gray-400 font-semibold transition duration-300">İletişim</a>
+                <a href="#" class="py-1 px-2 font-medium text-white bg-purple-dark rounded hover:bg-purple-light transition duration-300">Giriş Yap</a>
+                <a href="#" class="py-1 px-2 font-medium text-purple bg-white rounded hover:bg-gray-200 transition duration-300">Kayıt Ol</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Grid Section -->
+    <div class="bg-gray-100 py-2 px-2 sm:py-2 sm:px-2 lg:px-2 max-w-5xl mx-auto mt-4 rounded-lg">
+        <div class="grid grid-cols-12 gap-4">
+            <!-- Sol 4 Sütun -->
+            <div class="col-span-5 flex flex-col justify-between pl-10">
+                <!-- Sol 4 Sütun İçeriği (Giriş Formu) -->
+                <div class="bg-white p-10 shadow-md rounded-lg h-full flex flex-col justify-center">
+                    <h2 class="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-1xl mb-4">
+                        <span class="block">Açılış Sayfanıza Hoş Geldiniz</span>
+                        <span class="block text-purple">Bugün Başlayın</span>
+                    </h2>
+                    <!-- Giriş Formu -->
+                    <form class="space-y-4">
+                        <div>
+                            <label for="username" class="block text-sm font-medium text-gray-700">Kullanıcı Adı</label>
+                            <input type="text" id="username" name="username" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-purple-dark focus:ring focus:ring-purple-dark focus:ring-opacity-50" placeholder="Kullanıcı adınızı girin">
+                        </div>
+                        <div>
+                            <label for="password" class="block text-sm font-medium text-gray-700">Şifre</label>
+                            <input type="password" id="password" name="password" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-purple-dark focus:ring focus:ring-purple-dark focus:ring-opacity-50" placeholder="Şifrenizi girin">
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full py-2 px-4 border border-transparent text-base font-medium rounded-md text-white bg-purple-dark hover:bg-purple transition duration-300">Giriş Yap</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Sağ 8 Sütun -->
+            <div class="col-span-7 fixed-height pl-10">
+                <!-- Sağ 8 Sütun İçeriği (Resim Alanı) -->
+                <div class="bg-white p-4 shadow-md rounded-lg h-full flex items-center justify-center image-container">
+                    <!-- Resim Alanı -->
+                    <img src="https://picsum.photos/200" alt="Resim Alanı" class="w-full h-full object-cover rounded-lg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ortalanmış Metin -->
+    <div class="bg-gray-100 py-2 px-2 sm:py-2 sm:px-2 lg:px-2 max-w-5xl mx-auto mt-4 rounded-lg">
+        <div class="grid grid-cols-12 pl-10">
+            <span class="col-span-12 text-purple-600 text-1xl text-center">HOW IT WORKS</span>
+        </div>
+        <div class="grid grid-cols-12 pl-10">
+            <span class="col-span-12 text-black text-4xl text-center hover:font-bold">Building with Mamba is simple</span>
+        </div>
+    </div>
+
+    <!-- Flash Card Section -->
+    <div class="bg-gray-100 py-2 px-2 sm:py-2 sm:px-2 lg:px-2 max-w-5xl mx-auto mt-4 rounded-lg">
+        <div class="grid grid-cols-12 gap-4 pl-10">
+            <!-- Kart 1 -->
+            <div class="col-span-4">
+                <div class="bg-white p-4 shadow-md rounded-lg flex flex-col items-start">
+                    <div class="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center mb-2">1</div>
+                    <div class="text-center">Bu birinci kartın metnidir.</div>
+                </div>
+            </div>
+            <!-- Kart 2 -->
+            <div class="col-span-4">
+                <div class="bg-white p-4 shadow-md rounded-lg flex flex-col items-start">
+                    <div class="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center mb-2">2</div>
+                    <div class="text-center">Bu ikinci kartın metnidir.</div>
+                </div>
+            </div>
+            <!-- Kart 3 -->
+            <div class="col-span-4">
+                <div class="bg-white p-4 shadow-md rounded-lg flex flex-col items-start">
+                    <div class="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center mb-2">3</div>
+                    <div class="text-center">Bu üçüncü kartın metnidir.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <!-- Carousel -->
+<div class="max-w-5xl mx-auto mt-8 bg-gray-100 rounded-lg py-4 pl-10">
+    <div class="bg-white rounded-lg shadow-lg p-6">
+        <div class="grid grid-cols-12 gap-4">
+            <div class="col-span-6 flex items-center justify-center">
+                <img id="large-image" src="https://fastly.picsum.photos/id/12/2500/1667.jpg?hmac=Pe3284luVre9ZqNzv1jMFpLihFI6lwq7TPgMSsNXw2w" class="w-full h-auto object-cover rounded-lg" style="width: 460px; height: 260px;">
+            </div>
+            <!-- Sağ 6 Sütun -->
+            <div class="col-span-6 flex flex-col justify-center space-y-4">
+                <!-- Carousel Öğeleri -->
+                <div class="carousel-item flex flex-col items-center space-y-4">
+                    <!-- Küçük Yuvarlak Fotoğraf -->
+                    <div class="flex justify-center">
+                        <img src="https://fastly.picsum.photos/id/12/2500/1667.jpg?hmac=Pe3284luVre9ZqNzv1jMFpLihFI6lwq7TPgMSsNXw2w" class="w-12 h-12 rounded-full">
+                    </div>
+                    <!-- Başlık -->
+                    <div class="text-center">
+                        <h2 class="text-2xl font-bold">Başlık 1</h2>
+                    </div>
+                    <!-- Açıklama -->
+                    <div class="text-center">
+                        <p class="text-gray-600">Bu bir açıklama metnidir. Fotoğraf 1 için açıklama burada yer alır.</p>
+                    </div>
+                </div>
+                <div class="carousel-item hidden flex flex-col items-center space-y-4">
+                    <!-- Küçük Yuvarlak Fotoğraf -->
+                    <div class="flex justify-center">
+                        <img src="https://fastly.picsum.photos/id/14/2500/1667.jpg?hmac=ssQyTcZRRumHXVbQAVlXTx-MGBxm6NHWD3SryQ48G-o" class="w-12 h-12 rounded-full">
+                    </div>
+                    <!-- Başlık -->
+                    <div class="text-center">
+                        <h2 class="text-2xl font-bold">Başlık 2</h2>
+                    </div>
+                    <!-- Açıklama -->
+                    <div class="text-center">
+                        <p class="text-gray-600">Bu bir açıklama metnidir. Fotoğraf 2 için açıklama burada yer alır.</p>
+                    </div>
+                </div>
+                <div class="carousel-item hidden flex flex-col items-center space-y-4">
+                    <!-- Küçük Yuvarlak Fotoğraf -->
+                    <div class="flex justify-center">
+                        <img src="https://fastly.picsum.photos/id/16/2500/1667.jpg?hmac=uAkZwYc5phCRNFTrV_prJ_0rP0EdwJaZ4ctje2bY7aE" class="w-12 h-12 rounded-full">
+                    </div>
+                    <!-- Başlık -->
+                    <div class="text-center">
+                        <h2 class="text-2xl font-bold">Başlık 3</h2>
+                    </div>
+                    <!-- Açıklama -->
+                    <div class="text-center">
+                        <p class="text-gray-600">Bu bir açıklama metnidir. Fotoğraf 3 için açıklama burada yer alır.</p>
+                    </div>
+                </div>
+                <div class="carousel-item hidden flex flex-col items-center space-y-4">
+                    <!-- Küçük Yuvarlak Fotoğraf -->
+                    <div class="flex justify-center">
+                        <img src="https://fastly.picsum.photos/id/27/3264/1836.jpg?hmac=p3BVIgKKQpHhfGRRCbsi2MCAzw8mWBCayBsKxxtWO8g" class="w-12 h-12 rounded-full">
+                    </div>
+                    <!-- Başlık -->
+                    <div class="text-center">
+                        <h2 class="text-2xl font-bold">Başlık 4</h2>
+                    </div>
+                    <!-- Açıklama -->
+                    <div class="text-center">
+                        <p class="text-gray-600">Bu bir açıklama metnidir. Fotoğraf 4 için açıklama burada yer alır.</p>
+                    </div>
+                </div>
+                <!-- Pointerlar -->
+                <div class="flex justify-center space-x-2 mt-1">
+                    <button class="carousel-pointer w-4 h-4 bg-gray-400 rounded-full cursor-pointer" onclick="showSlide(0)"></button>
+                    <button class="carousel-pointer w-4 h-4 bg-gray-400 rounded-full cursor-pointer" onclick="showSlide(1)"></button>
+                    <button class="carousel-pointer w-4 h-4 bg-gray-400 rounded-full cursor-pointer" onclick="showSlide(2)"></button>
+                    <button class="carousel-pointer w-4 h-4 bg-gray-400 rounded-full cursor-pointer" onclick="showSlide(3)"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let currentIndex = 0;
+    const items = document.querySelectorAll('.carousel-item');
+    const pointers = document.querySelectorAll('.carousel-pointer');
+    const largeImage = document.getElementById('large-image');
+
+    function showSlide(index) {
+        // Tüm öğeleri gizle
+        items.forEach(item => item.classList.add('hidden'));
+        // Tüm pointerları varsayılan renge döndür
+        pointers.forEach(pointer => pointer.classList.remove('bg-purple-600'));
+
+        // İndeks güncelle
+        currentIndex = index;
+
+        // İlgili slaydı göster
+        items[currentIndex].classList.remove('hidden');
+        // İlgili pointerı aktif yap
+        pointers[currentIndex].classList.add('bg-purple-600');
+
+        // Sağdaki görseli ve büyük görseli güncelle
+        if (currentIndex === 0) {
+            largeImage.src = 'https://fastly.picsum.photos/id/12/2500/1667.jpg?hmac=Pe3284luVre9ZqNzv1jMFpLihFI6lwq7TPgMSsNXw2w';
+        } else if (currentIndex === 1) {
+            largeImage.src = 'https://fastly.picsum.photos/id/14/2500/1667.jpg?hmac=ssQyTcZRRumHXVbQAVlXTx-MGBxm6NHWD3SryQ48G-o';
+        } else if (currentIndex === 2) {
+            largeImage.src = 'https://fastly.picsum.photos/id/16/2500/1667.jpg?hmac=uAkZwYc5phCRNFTrV_prJ_0rP0EdwJaZ4ctje2bY7aE';
+        } else if (currentIndex === 3) {
+            largeImage.src = 'https://fastly.picsum.photos/id/27/3264/1836.jpg?hmac=p3BVIgKKQpHhfGRRCbsi2MCAzw8mWBCayBsKxxtWO8g';
+        }
+    }
+
+    // İlk pointerı varsayılan olarak seçili yap
+    pointers[0].classList.add('bg-purple-600');
+</script>
+
+
+    <!-- Hero Section -->
+    <div class="bg-gray-100 py-2 px-2 sm:py-2 sm:px-2 lg:px-2 max-w-5xl mx-auto mt-4 rounded-lg">
+        <div class="grid grid-cols-12 pl-10">
+            <span class="col-span-12 text-black text-4xl text-start hover:font-bold pt-10">Create with us</span>
+        </div>
+        <div class="grid grid-cols-12 pt-7 pl-10"> <!-- pt-10 eklenmiş -->
+            <span class="col-span-12 text-gray-700 text-1xl text-start pl-5 py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sapiente eius tempora cum velit facilis quia dignissimos officiis! Quo aliquid ipsum tempora. Similique iusto quasi in corporis, quae cupiditate cum!</span>
+        </div>
+    </div>
+ <!-- Hero Section 2 -->
+ <div class="bg-gray-100 py-2 px-2 sm:py-2 sm:px-2 lg:px-2 max-w-5xl mx-auto mt-4 rounded-lg">
+    <div class="grid grid-cols-12 gap-4  pl-10">
+        <!-- Sol 8 Sütun -->
+        <div class="col-span-8 ">
+            <img src="https://fastly.picsum.photos/id/22/4434/3729.jpg?hmac=fjZdkSMZJNFgsoDh8Qo5zdA_nSGUAWvKLyyqmEt2xs0" class="w-full h object-cover rounded-lg">
+        </div>
+        <!-- Sağ 4 Sütun -->
+        <div class="col-span-4 flex flex-col space-y-4 justify-between">
+            <!-- Oval Buton -->
+            <div class="flex justify-start py-4">
+                <button class="px-4 py-2 bg-purple-600 text-white rounded-full ">Oval Buton</button>
+            </div>
+            <!-- Başlık -->
+            <div>
+                <h2 class="text-2xl font-bold">Başlık</h2>
+            </div>
+            <!-- Boşluk -->
+            <div class="flex-grow"></div>
+            <!-- Tarih -->
+            <div>
+                <p class="text-gray-500">Tarih: 2024-07-05</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Grid Alanı -->
+<div class="bg-gray-100 max-w-5xl mx-auto mt-8">
+    <div class="rounded-lg shadow-lg p-6 flex-item-center pl-10" >
+        <div class="grid grid-cols-12 gap-3 ">
+            <!-- Sütun 1-4 -->
+            <div class="col-span-4 bg-white rounded-lg py-5 pl-3">
+                <p><span class="font-bold text-black">Bu birinci</span> metnin devamıdır. İkinci satır buraya gelecek.</p>
+             
+            </div>
+            <!-- Sütun 5-8 -->
+            <div class="col-span-4  bg-white rounded-lg py-5 pl-3">
+                <p><span class="font-bold text-black">Bu ikinci</span> metnin devamıdır. İkinci satır buraya gelecek.</p>
+              
+            </div>
+            <!-- Sütun 9-12 -->
+            <div class="col-span-4  bg-white rounded-lg py-5 pl-3">
+                <p><span class="font-bold text-black">Bu üçüncü</span> metnin devamıdır. İkinci satır buraya gelecek.</p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Ortalanmış Metin ve Fotoğraf -->
+<div class="bg-gray-100 py-2 px-2 sm:py-2 sm:px-2 lg:px-2 max-w-5xl mx-auto mt-4 rounded-lg">
+    <div class="grid grid-cols-12">
+        <span class="col-span-12 text-black text-4xl text-center hover:font-bold">Our team is here to help you</span>
+    </div>
+    <div class="grid grid-cols-12">
+        <span class="col-span-12 text-black text-1xl text-center">Meet our crew</span>
+    </div>
+    <div class="grid grid-cols-12 pl-10">
+        <img src="images/man.jpg" class="col-span-12 rounded-lg" style="width: 950px; height: 330px; object-fit: cover;">
+    </div>
+</div>
+<!-- Footer -->
+<div class="bg-gray-100 py-4 px-2 sm:py-4 sm:px-2 lg:px-2 max-w-5xl mx-auto mt-4 rounded-lg flex justify-between items-center">
+    <!-- Left side: Mamba text -->
+    <div class="text-black text-lg font-semibold">
+        Mamba
+    </div>
+    <!-- Right side: Icons -->
+    <div class="flex space-x-4">
+        <!-- Email Icon -->
+        <a href="mailto:example@example.com" class="text-black hover:text-gray-500">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 12.713L.15 3.725 0 21.75h24L23.85 3.725zM23.625 0H.375C.165 0 0 .18 0 .4v.025l12 9.213 12-9.213V.4c0-.22-.165-.4-.375-.4z"/>
+            </svg>
+        </a>
+        <!-- Twitter Icon -->
+        <a href="https://twitter.com/yourprofile" target="_blank" class="text-black hover:text-gray-500">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23.953 4.569c-.885.39-1.83.656-2.825.775 1.014-.608 1.793-1.57 2.163-2.723-.949.555-2 .959-3.12 1.184-.897-.957-2.178-1.555-3.594-1.555-2.72 0-4.924 2.205-4.924 4.917 0 .39.043.765.127 1.124C7.728 8.087 4.1 6.128 1.67 3.149c-.427.733-.669 1.58-.669 2.475 0 1.71.87 3.214 2.188 4.096-.807-.026-1.566-.247-2.229-.616v.061c0 2.385 1.698 4.374 3.946 4.828-.413.111-.85.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.376 4.604 3.417-1.68 1.318-3.794 2.102-6.093 2.102-.395 0-.779-.023-1.17-.067 2.179 1.392 4.768 2.204 7.548 2.204 9.054 0 14-7.497 14-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/>
+            </svg>
+        </a>
+        <!-- GitHub Icon -->
+        <a href="https://github.com/yourprofile" target="_blank" class="text-black hover:text-gray-500">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.615-4.042-1.615-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.084-.729.084-.729 1.205.084 1.838 1.237 1.838 1.237 1.07 1.835 2.807 1.305 3.492.998.108-.775.42-1.305.763-1.605-2.665-.3-5.467-1.335-5.467-5.93 0-1.31.467-2.38 1.236-3.22-.124-.303-.536-1.523.117-3.176 0 0 1.01-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.29-1.552 3.3-1.23 3.3-1.23.653 1.653.241 2.873.117 3.176.77.84 1.236 1.91 1.236 3.22 0 4.61-2.807 5.625-5.48 5.92.43.37.823 1.1.823 2.22 0 1.606-.015 2.897-.015 3.293 0 .323.217.694.825.577 4.765-1.585 8.205-6.082 8.205-11.385 0-6.627-5.373-12-12-12z"/>
+            </svg>
+        </a>
+    </div>
+</div>
+</body>
+</html>

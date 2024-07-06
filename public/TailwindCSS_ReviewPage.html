@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+            <div class="relative flex items-center justify-between h-16">
+                <!-- Sol Kısım Linkler -->
+                <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+                    <div class="hidden sm:block sm:ml-6">
+                        <div class="flex space-x-4">
+                            <a href="#" class="relative text-gray-600 px-3 py-2 text-sm font-medium transition-colors duration-300 active:text-purple hover:text-purple-600" onclick="changeUnderline(event, 'link1')">
+                                <span id="link-text1">Link 1</span>
+                                <span id="underline-link1" class="absolute left-0 bottom-0 w-full h-0.5 bg-transparent transition-all duration-300"></span>
+                            </a>
+                            <a href="#" class="relative text-gray-600 px-3 py-2 text-sm font-medium transition-colors duration-300 hover:text-purple-600" onclick="changeUnderline(event, 'link2')">
+                                <span id="link-text2">Link 2</span>
+                                <span id="underline-link2" class="absolute left-0 bottom-0 w-full h-0.5 bg-transparent transition-all duration-300"></span>
+                            </a>
+                            <a href="#" class="relative text-gray-600 px-3 py-2 text-sm font-medium transition-colors duration-300 hover:text-purple-600" onclick="changeUnderline(event, 'link3')">
+                                <span id="link-text3">Link 3</span>
+                                <span id="underline-link3" class="absolute left-0 bottom-0 w-full h-0.5 bg-transparent transition-all duration-300"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Logo -->
+                <div class="flex items-center justify-center flex-1 lg:justify-start">
+                    <img class="block h-8 w-auto mx-auto lg:mx-0" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="Workflow">
+                    <span class="ml-1 text-lg font-semibold text-gray-900">Workflow</span>
+                </div>
+                <!-- Sağ Kısım (Arama Kutusu ve Giriş Butonu) -->
+                <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                    <div class="hidden sm:block sm:ml-6">
+                        <div class="flex items-center">
+                            <!-- Arama Kutusu -->
+                            <input type="text" placeholder="Search" class="bg-gray-100 border-transparent focus:ring-purple-500 focus:border-purple-500 block w-full px-3 py-2 rounded-md text-sm placeholder-gray-500 focus:outline-none">
+                            <!-- Search Icon -->
+                        </div>
+                    </div>
+                    <!-- Log In Butonu -->
+                    <a href="#" class="ml-3 px-3 py-2 rounded-md text-sm font-medium text-white bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-purple-500">Log In</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- İçerik Alanı -->
+    <div class="bg-gray-300 p-4 shadow-lg mx-auto mt-0 text-center">
+        <!-- Başlık Satırı -->
+        <div class="text-4xl font-bold text-gray-900 leading-tight mb-4 pt-10">
+            Quisquam necessita <br>
+            <span class="text-purple-600"><span class="text-black">vel</span> laborum<br>doloribus</span><span class="text-black">delectus</span>
+        </div>
+        <!-- Metin Satırı -->
+        <div class="text-sm text-gray-700 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Similique atque molestias assumenda pariatur.</div>
+        <!-- Buton Satırı -->
+        <div class="flex items-center justify-center pt-5 pb-20">
+            <button class="bg-purple-600 text-white px-4 py-2 rounded-md mr-2 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500">Get Started</button>
+            <span class="text-sm text-gray-600">Butonun yanında yer alan yazı.</span>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 py-8 pl-80 pr-80">
+        <div>
+            <h2 class="text-2xl font-bold text-center">Başlık</h2>
+        </div>
+        <!-- Grid Container -->
+        <div class="grid grid-cols-12 gap-8 mt-10" >
+<!-- Kart 1 -->
+<div class="col-span-6 rounded-3xl overflow-hidden shadow-xl max-w-xs my-3">
+    <!-- Beyaz arka planlı alan -->
+    <div class="bg-white text-start p-10 relative z-0">
+        <i class="fa-sharp fa-solid fa-quote-right fa-2xl" style="color:blueviolet;"></i>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, obcaecati velit placeat nesciunt, quibusdam officiis dicta quo sunt fugit .</p>  
+        <div class="text-end pl-44"><i class="fa-sharp fa-solid fa-quote-left fa-2xl" style="color:blueviolet;"></i></div>
+        <!-- Yuvarlak fotoğraf -->
+        <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 ">
+            <img class="w-12 h-12 rounded-full border-4 border-purple-600" src="https://via.placeholder.com/100" alt="Avatar">
+        </div>
+    </div>
+    
+    <!-- Mor arka planlı alan -->
+    
+        <div class="p-4 bg-purple-600">
+            <div class="text-lg font-semibold text-center text-white pt-6">John Doe</div>
+        </div>
+ 
+    
+</div>
+
+
+            <!-- Kart 2 -->
+            <div class="col-span-6 rounded-3xl overflow-hidden shadow-xl max-w-xs my-3">
+                <!-- Beyaz arka planlı alan -->
+                <div class="bg-white  p-10 relative z-0">
+                    <div class="text-end"><i class="fa-sharp fa-solid fa-quote-right fa-2xl" style="color:blueviolet;"></i></div>
+                    
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, obcaecati velit placeat nesciunt, quibusdam officiis dicta quo sunt fugit quidem .</p>
+                    <div class="text-end pl-44"><i class="fa-sharp fa-solid fa-quote-left fa-2xl" style="color:blueviolet;"></i></div>
+                    
+                    <!-- Yuvarlak fotoğraf -->
+                    <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 ">
+                        <img class="w-12 h-12 rounded-full border-4 border-purple-600" src="https://via.placeholder.com/100" alt="Avatar">
+                    </div>
+                </div>
+                
+                <!-- Mor arka planlı alan -->
+                
+                    <div class="p-4 bg-purple-600">
+                        <div class="text-lg font-semibold text-center text-white pt-6">John Doe</div>
+                    </div>
+             
+                
+            </div>
+            <!-- Kart 3 -->
+            <div class="col-span-6 rounded-3xl overflow-hidden shadow-xl max-w-xs my-3">
+                <!-- Beyaz arka planlı alan -->
+                <div class="bg-white text-center p-10 relative z-0">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, obcaecati velit placeat nesciunt, quibusdam officiis dicta quo sunt fugit quidem .</p>
+                    <!-- Yuvarlak fotoğraf -->
+                    <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 ">
+                        <img class="w-12 h-12 rounded-full border-4 border-purple-600" src="https://via.placeholder.com/100" alt="Avatar">
+                    </div>
+                </div>
+                
+                <!-- Mor arka planlı alan -->
+                
+                    <div class="p-4 bg-purple-600">
+                        <div class="text-lg font-semibold text-center text-white pt-6">John Doe</div>
+                    </div>
+             
+                
+            </div>
+            <!-- Kart 4 -->
+            <div class="col-span-6 rounded-3xl overflow-hidden shadow-xl max-w-xs my-3">
+                <!-- Beyaz arka planlı alan -->
+                <div class="bg-white text-center p-10 relative z-0">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, obcaecati velit placeat nesciunt, quibusdam officiis dicta quo sunt fugit quidem .</p>
+                    <!-- Yuvarlak fotoğraf -->
+                    <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 ">
+                        <img class="w-12 h-12 rounded-full border-4 border-purple-600" src="https://via.placeholder.com/100" alt="Avatar">
+                    </div>
+                </div>
+                
+                <!-- Mor arka planlı alan -->
+                
+                    <div class="p-4 bg-purple-600">
+                        <div class="text-lg font-semibold text-center text-white pt-6">John Doe</div>
+                    </div>
+             </div>
+
+        </div>
+    </div>
+
+  <!-- Contact Us -->
+  <div class="bg-gray-300 min-h-screen flex flex-col justify-between">
+    <div class="container mx-auto p-6">
+        <!-- İlk Satır: Contact Us Form -->
+        <div class="col-span-12 md:col-span-6 md:col-start-4">
+            <div class="bg-white p-6 rounded-lg shadow-md" style="width: 400px; height: 500px; margin: 0 auto;">
+                <h2 class="text-2xl font-semibold mb-4 text-center">Contact Us</h2>
+                <form action="#" method="POST" class="grid grid-cols-1 gap-4">
+                    <div class="col-span-1">
+                        <label for="name" class="block mb-1">Name:</label>
+                        <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded-md bg-gray-200 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    </div>
+                    <div class="col-span-1">
+                        <label for="email" class="block mb-1">Email:</label>
+                        <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-md bg-gray-200 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                    </div>
+                    <div class="col-span-1">
+                        <label for="message" class="block mb-1">Message:</label>
+                        <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 border rounded-md bg-gray-200 focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+                    </div>
+                    <div class="col-span-1">
+                        <button type="submit" class="bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 w-full" >Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- İkinci Satır: Menü ve Sosyal Medya İkonları -->
+        <div class="col-span-12 md:col-span-6 md:col-start-1 mt-10">
+            <div class="bg-gray-300 p-6">
+                <div class="flex justify-between items-center">
+                    <div class="space-x-4">
+                        <a href="#" class="text-gray-700 hover:text-purple-600">Shop</a>
+                        <a href="#" class="text-gray-700 hover:text-purple-600">About</a>
+                        <a href="#" class="text-gray-700 hover:text-purple-600">Blog</a>
+                        <a href="#" class="text-gray-700 hover:text-purple-600">Pricing</a>
+                        <a href="#" class="text-gray-700 hover:text-purple-600">Contact</a>
+                    </div>
+                    <div class="flex space-x-2">
+                        <a href="#" class="bg-purple-600 rounded-full p-2">
+                            <svg class="text-white h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.675 0h-21.35c-.73 0-1.325.597-1.325 1.33v21.338c0 .733.595 1.33 1.325 1.33h11.492v-9.293h-3.118v-3.622h3.118v-2.672c0-3.1 1.895-4.792 4.659-4.792 1.325 0 2.463.099 2.794.143v3.238h-1.917c-1.502 0-1.793.714-1.793 1.76v2.315h3.586l-.467 3.622h-3.119v9.293h6.102c.73 0 1.325-.597 1.325-1.33v-21.339c0-.733-.595-1.33-1.325-1.33z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="bg-purple-600 rounded-full p-2">
+                            <svg class="text-white h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.628 0-12 5.373-12 12 0 5.302 3.438 9.8 8.205 11.385.6.111.82-.26.82-.577 0-.285-.011-1.04-.017-2.04-3.338.727-4.042-1.609-4.042-1.609-.546-1.385-1.333-1.755-1.333-1.755-1.089-.746.083-.731.083-.731 1.205.084 1.838 1.237 1.838 1.237 1.07 1.835 2.807 1.304 3.492.998.108-.776.42-1.304.763-1.604-2.665-.303-5.466-1.332-5.466-5.93 0-1.309.467-2.381 1.235-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23.96-.267 1.986-.399 3.006-.405 1.02.006 2.046.138 3.006.405 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.624-5.475 5.92.431.371.815 1.103.815 2.222 0 1.604-.015 2.896-.015 3.286 0 .319.218.694.825.576 4.765-1.588 8.197-6.084 8.197-11.385 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="bg-purple-600 rounded-full p-2">
+                            <svg class="text-white h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-6.065c0-1.447-.03-3.309-2.016-3.309-2.018 0-2.325 1.575-2.325 3.201v6.174h-3.554v-12.448h-3.554v12.448h-3.554v-12.448h3.554v1.698h.048c.495-.939 1.704-1.927 3.509-1.927 3.757 0 4.449 2.473 4.449 5.681v7.996z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="bg-purple-600 rounded-full p-2">
+                            <svg class="text-white h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M17.5 3a.5.5 0 0 1 .5.5v12a.5.5 0 0 1-.5.5H2.5a.5.5 0 0 1-.5-.5v-12a.5.5 0 0 1 .5-.5h15zM4 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1H4zm0 3a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1H4zm0 3a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1H4z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <script>
+        // JavaScript ile link tıklandığında altındaki çizginin ve link metnin renginin değiştirme işlemi
+        function changeUnderline(event, linkId) {
+            // Tüm linklerin altındaki çizgi ve metin rengini varsayılan gri rengine çevir
+            const allUnderlines = document.querySelectorAll('.absolute');
+            allUnderlines.forEach(underline => {
+                underline.classList.remove('bg-purple-600');
+            });
+
+            const allLinkTexts = document.querySelectorAll('[id^="link-text"]');
+            allLinkTexts.forEach(linkText => {
+                linkText.classList.remove('text-purple-600');
+            });
+
+            // Tıklanan linkin altındaki çizgiyi ve metin rengini mor yap
+            const underline = document.getElementById(`underline-${linkId}`);
+            underline.classList.add('bg-purple-600');
+            
+            const linkText = document.getElementById(`link-text${linkId.charAt(linkId.length - 1)}`);
+            linkText.classList.add('text-purple-600');
+        }
+    </script>
+</body>
+</html>
